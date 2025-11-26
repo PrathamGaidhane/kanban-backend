@@ -12,11 +12,14 @@ const app = express();
 // ======================
 app.use(cors({
   origin: [
-    "https://kanban-board-git-main-pratham-gaidhanes-projects.vercel.app",
+    "https://kanban-board-gzredilvq-pratham-gaidhanes-projects.vercel.app",
+    "https://kanban-board-pratham-gaidhanes-projects.vercel.app",
     "http://localhost:5173"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
+
 
 app.use(express.json());
 
